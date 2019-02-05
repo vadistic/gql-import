@@ -9,7 +9,7 @@
 
 ## Why
 
-I wanted to reuse parts of large auto-generated schema from [Prisma]() without pain of maintaining all details. Using Graphql-in-ts approach I can do powerful schema manipulation without risking bugs or out-of-sync schema.
+I wanted to reuse parts of large auto-generated schema from [Prisma](https://github.com/prisma/prisma) without pain of maintaining all details. Using Graphql-in-ts approach I can do powerful schema manipulation without risking bugs or out-of-sync schema.
 
 ### Few ideas of possibilities
 
@@ -23,10 +23,12 @@ I mean, this make sense, yeah?
 
 ## Installation
 
-From git
+From git tag
 
 ```sh
-// TODO
+  yarn add vadistic/gql-import# gql-import-v0.1.0-gitpkg
+
+  # or as devDep if schema is compiled and saved
 ```
 
 ## Features
@@ -122,7 +124,7 @@ const article = gql`
 
 ### While keeping it stringified with noop `gql-tag`
 
-This tool is meant for editing server-side schemas with graphql-in-ts approach and parsing your schema to `DocumentNode`s with [graphql-tag]() is just not necessary (i.e. you can just use `parse` from [graphql]() on the last step to create typeDefs).
+This tool is meant for editing server-side schemas with graphql-in-ts approach and parsing your schema to `DocumentNode`s with [graphql-tag](https://github.com/apollographql/graphql-tag) is just not necessary (i.e. you can just use `parse` from [graphql](https://github.com/graphql/graphql-js) on the last step to create typeDefs).
 
 ```ts
 import { gql } from 'gql-import'
@@ -139,9 +141,9 @@ type User {
 
 ### With or without graphql-import
 
-With [graphql-import]() installed this util will use it to load specified source (allowing usage of #import declarations there) - but it's `optionalDependency`.
+With [graphql-import](https://github.com/prisma/graphql-import) installed this util will use it to load specified source (allowing usage of #import declarations there) - but it's `optionalDependency`.
 
-### And debuggable error reporting
+### Enjoing debuggable error reporting
 
 - Cannot locate source S
 - Specified type T not found in S
