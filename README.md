@@ -159,3 +159,4 @@ Which makes updates after datamodel changes a breeze
 - polish API
 - test edge cases
 - publish?
+ext install ms-vscode.vscode-typescript-tslint-plugin

@@ -1,6 +1,6 @@
 {
   "name": "gql-import",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Regex-powered tool for reusable GraphQL SDL",
   "main": "dist/index.js",
   "repository": "https://github.com/vadistic/gql-import",
@@ -14,16 +14,16 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.0",
-    "@types/node": "^10.12.21",
+    "@types/jest": "^24.0.3",
+    "@types/node": "^11.9.3",
     "graphql": "^14.1.1",
-    "jest": "^24.0.0",
+    "jest": "^24.1.0",
     "prettier": "^1.16.4",
     "ts-jest": "^23.10.5",
     "ts-node": "^8.0.2",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.3.1"
+    "typescript": "^3.3.3"
   },
   "peerDependencies": {
     "graphql": "^14.1.1"

@@ -6,6 +6,7 @@
     "baseUrl": "src",
     "outDir": "dist",
     "lib": ["esnext"],
+    "declaration": true,
     // modules
     "moduleResolution": "node",
     "module": "commonjs",
