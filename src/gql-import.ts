@@ -2,7 +2,6 @@ import * as fs from 'fs'
 // tslint:disable-next-line:no-implicit-dependencies
 import { importSchema } from 'graphql-import'
 import * as path from 'path'
-
 import { gql } from './gql-tag'
 
 const DEFAULT_SOURCE_PATH = path.resolve(
@@ -201,10 +200,10 @@ class GqlImport {
 
   private getFields(selection: GqlImportSelection) {
     const getFieldsByNameRegex = (name: string) =>
-      new RegExp(`(${name})(?:\\(?:[A-z\\s:,!]+\\):|:) [A-z!]+`, 'mg')
+      new RegExp(`(${name})(?:\\([A-z\\s:,!]+\\):|:) [A-z!]+`, 'mg')
 
     const getFieldNamesbyNameRegex = (name: string) =>
-      new RegExp(`(${name})(?=(?:\\(?:[A-z\\s:,!]+\\):|:) [A-z!]+)`, 'mg')
+      new RegExp(`(${name})(?=(?:\([A-z\s:,!]+\):|:) [A-z!]+)`, 'mg')
 
     const normaliseSelection = (_selection: GqlImportSelection) => {
       if (Array.isArray(_selection)) {

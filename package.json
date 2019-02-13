@@ -1,6 +1,6 @@
 {
   "name": "gql-import",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Regex-powered tool for reusable GraphQL SDL",
   "main": "dist/index.js",
   "files": [
