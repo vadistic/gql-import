@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "Regex-powered tool for reusable GraphQL SDL",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/vadistic/gql-import",
   "author": "Jakub Wadas <vadistic@gmail.com>",
   "license": "MIT",

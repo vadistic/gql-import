@@ -26,9 +26,9 @@ I mean, this make sense, yeah?
 From git tag
 
 ```sh
-  yarn add vadistic/gql-import# gql-import-v0.1.0-gitpkg
+  $ yarn add vadistic/gql-import#gql-import-v0.1.0-gitpkg
 
-  # or as devDep if schema is compiled and saved
+  # or as -D if schema is compiled and saved in file
 ```
 
 ## Features
