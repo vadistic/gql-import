@@ -7,6 +7,10 @@
 - Tested
 - TypeScript
 
+## Archived
+
+I wrote better thingy: https://github.com/vadistic/graphql-extra
+
 ## Why
 
 I wanted to reuse parts of large auto-generated schema from [Prisma](https://github.com/prisma/prisma) without pain of maintaining all details. Using Graphql-in-ts approach I can do powerful schema manipulation without risking bugs or out-of-sync schema.
